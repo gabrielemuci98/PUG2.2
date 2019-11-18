@@ -1,0 +1,12 @@
+Spiega il seguente codice: a(href=`/profile?id=${person.id}`)
+
+Spiega il seguente codice const person = people.profiles.find(p => p.id === req.query.id);
+Viene individuata la persona con l’id specificato nell’url.
+Infatti req.query ritorna un oggetto JavaScript contenente le informazioni dell’URL dopo il carattere ‘?’ 
+es:
+/user?name=tom&age=55 
+Cosa ritorna il parametro req.query?
+{name:"tom", age: "55"}
+La funzione find dei vettori JavaScript (people.profiles è un vettore di persone) controlla se esiste un elemento del vettore che verifica la condizione specificata.
+Come si passano due parametri tramite URL?
+Se vogliamo aggiungere più parametri si concatenano tra loro con il carattere ‘&’
